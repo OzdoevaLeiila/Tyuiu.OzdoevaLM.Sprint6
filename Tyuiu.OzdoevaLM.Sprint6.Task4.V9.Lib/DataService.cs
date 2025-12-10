@@ -1,6 +1,4 @@
-﻿
-
-using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.OzdoevaLM.Sprint6.Task4.V9.Lib
 {
     public class DataService : ISprint6Task4V9
