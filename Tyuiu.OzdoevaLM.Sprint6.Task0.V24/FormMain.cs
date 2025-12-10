@@ -16,7 +16,7 @@ namespace Tyuiu.OzdoevaLM.Sprint6.Task0.V24
         {
             DataService ds = new DataService();
             try
-            {
+            { 
                 int x = Convert.ToInt32(textBoxX_OLM.Text);
                 double result = ds.Calculate(x);
                 textBoxResult_OLM.Text = result.ToString("F3");
