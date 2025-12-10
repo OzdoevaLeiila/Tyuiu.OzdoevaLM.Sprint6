@@ -9,6 +9,7 @@ namespace Tyuiu.OzdoevaLM.Sprint6.Task6.V4.Lib
         {
             string[] a = File.ReadAllLines(path);
             string str = "";
+            string n = "n";
             string res = "";
 
             foreach (string line in a)
@@ -20,8 +21,7 @@ namespace Tyuiu.OzdoevaLM.Sprint6.Task6.V4.Lib
 
             for (int i = 0; i < words.Length; i++)
             {
-                // Ищем 'n' или 'N' - приводим к нижнему регистру
-                if (words[i].ToLower().Contains("n"))
+                if (words[i].ToLower().Contains(n))
                 {
                     res = res + " " + words[i];
                 }
