@@ -7,24 +7,25 @@ namespace Tyuiu.OzdoevaLM.Sprint6.Task6.V4.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string[] a = File.ReadAllLines(path);
+            string[] lines = File.ReadAllLines(path);
             string str = "";
             string res = "";
 
-            foreach (string line in a)
+            foreach (string line in lines)
             {
                 str = str + " " + line;
             }
 
-            string[] words = str.Split(new char[] { ' ' }, System.StringSplitOptions.RemoveEmptyEntries);
+            string[] words = str.Split(' ');
 
             for (int i = 0; i < words.Length; i++)
             {
-                if (words[i].ToLower().Contains("n"))
+                if (words[i].Contains('n'))
                 {
                     res = res + " " + words[i];
                 }
             }
+
             return res.Trim();
         }
     }
